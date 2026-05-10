@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative min-h-[min(100svh,880px)] overflow-hidden border-b border-[var(--card-border)] bg-[#0d2818]"
+      className="relative min-h-[min(100svh,880px)] overflow-hidden border-b border-emerald-900/30 bg-[#0d2818]"
       aria-labelledby="hero-heading"
     >
       <div className="pointer-events-none absolute inset-0">
@@ -52,7 +52,7 @@ export function Hero() {
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
             <a
               href={`tel:${siteConfig.phoneTel}`}
-              className="inline-flex min-h-14 min-w-[200px] items-center justify-center rounded-full bg-[var(--accent)] px-8 text-base font-semibold text-[#1a2e1f] shadow-lg shadow-black/20 transition hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
+              className="inline-flex min-h-14 min-w-[200px] items-center justify-center rounded-full bg-amber-400 px-8 text-base font-semibold text-emerald-950 shadow-lg shadow-black/25 transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300"
             >
               โทรหาทีมงาน {siteConfig.phoneDisplay}
             </a>

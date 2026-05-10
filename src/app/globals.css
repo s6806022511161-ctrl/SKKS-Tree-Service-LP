@@ -26,7 +26,12 @@
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
+  background-image: radial-gradient(
+    ellipse 120% 80% at 50% -20%,
+    rgb(209 250 229 / 0.35),
+    transparent 55%
+  );
   color: var(--foreground);
   font-family: var(--font-sarabun), ui-sans-serif, system-ui, sans-serif;
 }

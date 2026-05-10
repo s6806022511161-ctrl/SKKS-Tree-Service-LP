@@ -29,18 +29,18 @@ export function Services() {
   return (
     <section
       id="services"
-      className="scroll-mt-24 border-b border-[var(--card-border)] bg-[var(--card)] py-16 sm:py-20"
+      className="scroll-mt-24 border-b border-emerald-200/70 bg-white py-16 sm:py-20"
       aria-labelledby="services-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl">
           <h2
             id="services-heading"
-            className="font-[family-name:var(--font-heading)] text-2xl font-bold tracking-tight text-[var(--foreground)] sm:text-3xl"
+            className="font-[family-name:var(--font-heading)] text-2xl font-bold tracking-tight text-emerald-950 sm:text-3xl"
           >
             บริการของเรา
           </h2>
-          <p className="mt-3 text-[var(--muted)]">
+          <p className="mt-3 text-emerald-800/85">
             เลือกบริการตามความต้องการของพื้นที่ — เหมาตัด เก็บกวาด หรือขนทิ้งครบวงจร
           </p>
         </div>
@@ -48,15 +48,15 @@ export function Services() {
           {services.map((item) => (
             <li
               key={item.title}
-              className="flex flex-col rounded-2xl border border-[var(--card-border)] bg-[var(--background)] p-6 shadow-sm transition hover:shadow-md"
+              className="flex flex-col rounded-2xl border border-emerald-200/80 bg-[#fbfdfb] p-6 shadow-md shadow-emerald-950/[0.06] ring-1 ring-emerald-900/[0.04] transition hover:border-emerald-300/90 hover:shadow-lg hover:shadow-emerald-950/[0.08]"
             >
               <span className="text-3xl" aria-hidden>
                 {item.icon}
               </span>
-              <h3 className="mt-4 font-[family-name:var(--font-heading)] text-lg font-semibold text-[var(--foreground)]">
+              <h3 className="mt-4 font-[family-name:var(--font-heading)] text-lg font-semibold text-emerald-950">
                 {item.title}
               </h3>
-              <p className="mt-2 flex-1 text-sm leading-relaxed text-[var(--muted)]">
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-emerald-800/85">
                 {item.description}
               </p>
             </li>

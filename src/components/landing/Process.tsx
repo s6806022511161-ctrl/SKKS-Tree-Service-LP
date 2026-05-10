@@ -25,36 +25,36 @@ export function Process() {
   return (
     <section
       id="process"
-      className="scroll-mt-24 border-b border-[var(--card-border)] bg-[var(--background)] py-16 sm:py-20"
+      className="scroll-mt-24 border-b border-emerald-200/70 bg-gradient-to-b from-emerald-50/95 via-[#eef5ef] to-[#f6f7f4] py-16 sm:py-20"
       aria-labelledby="process-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2
           id="process-heading"
-          className="font-[family-name:var(--font-heading)] text-2xl font-bold tracking-tight text-[var(--foreground)] sm:text-3xl"
+          className="font-[family-name:var(--font-heading)] text-2xl font-bold tracking-tight text-emerald-950 sm:text-3xl"
         >
           ขั้นตอนการทำงาน
         </h2>
-        <p className="mt-3 max-w-2xl text-[var(--muted)]">
+        <p className="mt-3 max-w-2xl text-emerald-800/85">
           ลำดับตามนี้ช่วยให้ประเมินราคาและผลลัพธ์ชัดเจน ลดความคลาดเคลื่อนระหว่างผู้ว่าจ้างและทีมงาน
         </p>
         <ol className="mt-10 grid gap-6 md:grid-cols-2">
           {steps.map((item) => (
             <li
               key={item.step}
-              className="relative flex gap-4 rounded-2xl border border-[var(--card-border)] bg-[var(--card)] p-6"
+              className="relative flex gap-4 rounded-2xl border border-emerald-200/80 bg-white p-6 shadow-md shadow-emerald-950/[0.06] ring-1 ring-emerald-900/[0.04]"
             >
               <span
-                className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--primary)] font-[family-name:var(--font-heading)] text-lg font-bold text-white"
+                className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-emerald-800 font-[family-name:var(--font-heading)] text-lg font-bold text-white shadow-inner shadow-emerald-950/20 ring-2 ring-emerald-600/30"
                 aria-hidden
               >
                 {item.step}
               </span>
               <div>
-                <h3 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-[var(--foreground)]">
+                <h3 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-emerald-950">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">{item.detail}</p>
+                <p className="mt-2 text-sm leading-relaxed text-emerald-800/85">{item.detail}</p>
               </div>
             </li>
           ))}
