@@ -1,6 +1,8 @@
-/** แก้ค่าเหล่านี้เมื่อมีข้อมูลจริงของธุรกิจ */
 export const siteConfig = {
-  businessName: "บริการตัดต้นไม้แบบเหมา ชลบุรี",
+  businessName: "ห้างหุ้นส่วนจำกัด SKKS ทรีเซอร์วิส",
+  businessNameEn: "Limited Partnership SKKS Tree Service",
+  /** เมนูบน — สั้น พอดีมือถือ */
+  brandShort: "SKKS ทรีเซอร์วิส",
   tagline: "รับจ้างตัดต้นไม้ เก็บกวาด และขนทิ้ง — พื้นที่ชลบุรีและใกล้เคียง",
   phoneDisplay: "08X-XXX-XXXX",
   phoneTel: "+66800000000",
@@ -13,6 +15,5 @@ export const siteConfig = {
     "บางละมุง",
     "อำเภออื่นในจังหวัดชลบุรี",
   ],
-  /** URL หลักของเว็บเมื่อ deploy — ใช้สำหรับ metadata */
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com",
 } as const;
